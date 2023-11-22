@@ -38,15 +38,15 @@
 
   text(1em, weight: 360, year)
 
-  v(1em)
+  v(1.1em)
 
   text(1em,weight: 360, "卒業論文")
 
-  v(1em)
+  v(1.1em)
 
   text(1.8em, weight: 400, title)
 
-  v(20em)
+  v(25em)
 
   text(1.8em, weight: 360, author)
 

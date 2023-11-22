@@ -25,6 +25,20 @@
 #set figure(
   numbering: "1",
 )
+#set align(left)
+// NOTE: コードブロックの背景など
+#show raw.where(block: false): box.with(
+  fill: luma(240),
+  inset: (x: 3pt, y: 0pt),
+  outset: (y: 3pt),
+  radius: 2pt,
+)
+#show raw.where(block: true): block.with(
+  fill: luma(240),
+  inset: 10pt,
+  radius: 4pt,
+)
+
 
 // 目次設定
 #counter(page).update(1)
@@ -34,4 +48,16 @@
 
 = これでいいのだ
 
+#v(1em)
 
+```textile
+コードも楽々打てる。
+
+> 楽にコードが書けるわけではないが？
+```
+
+```rs
+fn main(){
+  println!("Hello World");
+}
+```
